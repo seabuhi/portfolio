@@ -5,6 +5,7 @@ export const profile = {
     email: "seabuhikhazimzada@gmail.com",
     github: "https://github.com/seabuhi",
     linkedin: "https://linkedin.com/in/seabuhi",
+    instagram: "https://instagram.com/seabuhi",
     cvUrl: "/cv.pdf",
     avatar: "/photo.jpeg",
     status: "Available for work",

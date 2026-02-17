@@ -1,21 +1,23 @@
-export interface Project {
+export type Project = {
     id: string;
     title: string;
     description: string;
     tags: string[];
     liveUrl?: string;
     codeUrl?: string;
+    image?: string;
     featured?: boolean;
-}
+};
 
 export const projects: Project[] = [
     {
         id: "1",
-        title: "E-Commerce Platform",
-        description: "Full-stack marketplace with real-time inventory, payment integration, and admin dashboard built with Next.js and Spring Boot.",
-        tags: ["Next.js", "Spring Boot", "PostgreSQL", "Stripe"],
-        liveUrl: "https://example.com",
-        codeUrl: "https://github.com/seabuhi/ecommerce",
+        title: "Savelya",
+        description: "Marketplace + chat + payments built with Spring Boot and Next.js. Full-featured e-commerce platform with real-time messaging and secure payment integration.",
+        tags: ["Next.js", "Spring Boot", "PostgreSQL", "WebSocket"],
+        liveUrl: "https://savelya.com",
+        codeUrl: "https://github.com/seabuhi/savelya",
+        image: "/projects/Gemini_Generated_Image_khdtnhkhdtnhkhdt.png",
         featured: true,
     },
     {
@@ -25,6 +27,7 @@ export const projects: Project[] = [
         tags: ["Flutter", "Dart", "Firebase", "REST API"],
         liveUrl: "https://play.google.com/store",
         codeUrl: "https://github.com/seabuhi/fitness-tracker",
+        image: "/projects/fitness.png",
         featured: true,
     },
     {
@@ -34,6 +37,7 @@ export const projects: Project[] = [
         tags: ["React", "Node.js", "MongoDB", "Socket.io"],
         liveUrl: "https://example.com",
         codeUrl: "https://github.com/seabuhi/task-manager",
+        image: "/projects/taskmanager.png",
         featured: true,
     },
     {
@@ -43,6 +47,7 @@ export const projects: Project[] = [
         tags: ["TypeScript", "React", "OpenWeather API", "Tailwind"],
         liveUrl: "https://example.com",
         codeUrl: "https://github.com/seabuhi/weather-app",
+        image: "/projects/weather.png",
     },
     {
         id: "5",
@@ -51,6 +56,7 @@ export const projects: Project[] = [
         tags: ["Next.js", "Contentful", "GraphQL", "Vercel"],
         liveUrl: "https://example.com",
         codeUrl: "https://github.com/seabuhi/blog-cms",
+        image: "/projects/blog.png",
     },
     {
         id: "6",
@@ -58,5 +64,6 @@ export const projects: Project[] = [
         description: "Real-time messaging app with end-to-end encryption, file sharing, and video calls.",
         tags: ["Kotlin", "WebRTC", "Firebase", "Material Design"],
         codeUrl: "https://github.com/seabuhi/chat-app",
+        image: "/projects/chat.png",
     },
 ];

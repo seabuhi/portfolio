@@ -5,7 +5,7 @@ import GlassCard from '../GlassCard';
 import ProjectCard from '../ProjectCard';
 import SkillChips from '../SkillChips';
 import ContactCard from '../ContactCard';
-import { profile } from "@/data/skills";
+import { profile } from '@/data/profile';
 import { projects } from '@/data/projects';
 import { skills } from '@/data/skills';
 
@@ -74,7 +74,7 @@ export default function DesktopLayout() {
 
                         <div className="grid grid-cols-3 gap-6">
                             {projects.map((project) => (
-                                <ProjectCard key={project.id} project={project} />
+                                <ProjectCard key={project.id} project={project} variant="desktop" />
                             ))}
                         </div>
                     </section>
@@ -103,6 +103,7 @@ export default function DesktopLayout() {
                                 email={profile.email}
                                 github={profile.github}
                                 linkedin={profile.linkedin}
+                                instagram={profile.instagram}
                             />
                         </div>
                     </section>

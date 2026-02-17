@@ -7,7 +7,7 @@ import GlassCard from '../GlassCard';
 import ProjectCard from '../ProjectCard';
 import SkillsAccordion from '../SkillsAccordion';
 import ContactCard from '../ContactCard';
-import { profile } from "@/data/skills";
+import { profile } from '@/data/profile';
 import { projects } from '@/data/projects';
 import { skills } from '@/data/skills';
 
@@ -73,7 +73,7 @@ export default function MobileLayout() {
                             <div className="flex gap-4 pb-2">
                                 {projects.map((project) => (
                                     <div key={project.id} className="flex-shrink-0 w-[85vw] snap-center">
-                                        <ProjectCard project={project} />
+                                        <ProjectCard project={project} variant="mobile" />
                                     </div>
                                 ))}
                             </div>
@@ -101,6 +101,7 @@ export default function MobileLayout() {
                             email={profile.email}
                             github={profile.github}
                             linkedin={profile.linkedin}
+                            instagram={profile.instagram}
                         />
                     </section>
                 </div>
